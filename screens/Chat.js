@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import { 
   Text, 
   View,
-} from 'react-native';
+} from 'react-native'
 
 export const Chat = () => {
     return (
       <View>
         <Text>From chat</Text>
       </View>
-    );
+    )
   }
