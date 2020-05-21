@@ -1,12 +1,13 @@
 import React from 'react'
 import { View, Button, TouchableOpacity} from 'react-native'
 import { UserCard } from '../components/UserCard'
+import PicturesScreen from '../components/UserCamera'
 
 
 export const Home = ({ navigation }) => {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-
+<PicturesScreen></PicturesScreen>
         <Button
         title="Profile"
         onPress={() => navigation.navigate('Profile')}

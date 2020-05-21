@@ -7,6 +7,7 @@ import { Matches } from './screens/Matches'
 import { RegisterUser } from './screens/RegisterUser'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
+
 const Stack = createStackNavigator()
 
 const App = () => {
