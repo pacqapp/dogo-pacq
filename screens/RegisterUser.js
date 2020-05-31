@@ -1,41 +1,46 @@
 import React from 'react'
-import { View, Text, Image, ScrollView, TextInput } from 'react-native'
+import { View, ScrollView, TextInput, Text, Button} from 'react-native'
+import PicturesScreen from '../components/UserCamera'
 
-export const RegisterUser = () => {
+export const RegisterUser = ({ navigation }) => {
   return (
-    <View><ScrollView>
+    <ScrollView>
     <View>
-      <Text>Some more text</Text>
-      <Image source={{uri: "https://reactnative.dev/docs/assets/p_cat2.png"}} style={{width: 200, height: 200}}/>
+      <PicturesScreen></PicturesScreen>
     </View>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Name</Text>
     <TextInput
       style={{
         height: 40,
-        width: 600,
+        padding: 20,
         borderColor: 'gray',
         borderWidth: 0.5
       }}
-      defaultValue="Name"
     />
+    <Text>Age</Text>
     <TextInput
       style={{
         height: 40,
-        width: 600,
+        padding: 20,
         borderColor: 'gray',
         borderWidth: 0.5
       }}
-      defaultValue="Age"
-    />
+    /><Text>Description</Text>
     <TextInput
       style={{
         height: 40,
-        width: 600,
+        padding: 20,
         borderColor: 'gray',
         borderWidth: 0.5
       }}
-      defaultValue="Description"
     />
-  </ScrollView></View>
+    <Button
+    title="Save"
+    onPress={() => navigation.navigate('Profile')}
+    />
+    </View>
+  </ScrollView>
     )
 }
 

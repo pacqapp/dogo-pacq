@@ -20,5 +20,4 @@ export const Profile = ({ navigation }) => {
     );
   }
 
-
   

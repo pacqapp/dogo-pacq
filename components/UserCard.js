@@ -1,4 +1,5 @@
-import React from 'react'
+import * as React from 'react'
+import { View } from 'react-native'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -50,12 +51,12 @@ export const UserCard = ({
     <Content>
       <TitleBar>
         {thumbnailUrl && <Thumbnail url={thumbnailUrl} />}
-        <div>
+        <View>
           {title && <Title>{title}</Title>}
           {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
-        </div>
+        </View>
       </TitleBar>
     </Content>
   </Container>
-);
+)
 

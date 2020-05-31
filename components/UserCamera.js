@@ -14,7 +14,7 @@ export default class ImagePickerExample extends React.Component {
 
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Button title="Pick an image from camera roll" onPress={this._pickImage} />
+        <Button title="Pick image" onPress={this._pickImage} />
         {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
       </View>
     );

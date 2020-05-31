@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler'
-import React from 'react' 
+import React from 'react'
 import { Home } from './screens/Home'
 import { Profile } from './screens/Profile'
 import { Chat } from './screens/Chat'
@@ -26,6 +26,7 @@ const App = () => {
          <Stack.Screen
           name="Chat"
           component={Chat}
+          options={{ title: 'Chat' }}
         />
         <Stack.Screen
           name="Matches"
